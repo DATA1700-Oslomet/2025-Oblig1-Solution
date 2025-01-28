@@ -6,36 +6,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>The MagiScript Library</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous" defer></script>
+    <!-- TODO: add loading of jquery -->
     <script src="script.js" defer></script>
 </head>
 <body class="library">
 <h1>
-    Welcome to The MagiScript Library of
-    <span class="wizard-name">Mexyll</span>
-    the
-    <span class="wizard-adjective">Magnificent</span>
+    Welcome to The MagiScript Library of Mexyll the Magnificent
 </h1>
 <div class="book-view-container">
     <div id="book-view" class="hidden">
         <button id="close-tome">Close Tome</button>
         <div class="spell-page hidden" id="change-password-book">
             <div class="page-left">
-                <img src="resources/spellPages/witchPassword.webp" alt="sleepy wizard">
+                <img src="resources/spellPages/witchPassword.webp" alt="witch and padlock">
             </div>
 
             <form id="change-password-form">
-                <h2>Change Password</h2>
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" placeholder="Gandalf" required>
-
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" placeholder="E.g., mellon" required>
-
-                <label for="repeat-password">Repeat Password:</label>
-                <input type="password" id="repeat-password" name="repeatPassword" placeholder="E.g., mellon" required>
-
-                <button type="submit">Change Password</button>
+                <!-- TODO: add form for change password -->
             </form>
         </div>
         <div class="spell-page hidden" id="change-name-book">
@@ -49,68 +36,19 @@
                 attributes, marking a rebirth of self in the mystic realms.
                 You should henceforth be known as
                 <form id="rename-wizard-form">
-                    <input type="text" id="wizard-name" placeholder="Enter new wizard name">
-                    the
-                    <input type="text" id="wizard-adjective" placeholder="Enter new title">
-                    <button type="submit">
-                        "Nomen Novum Transfiguro!"
-                    </button>
+                    <!-- TODO: add form for changing name -->
                 </form>
             </div>
         </div>
 
         <div class="spell-page hidden" id="summon-familiar-book">
             <div class="page-left">
-                <img src="resources/spellPages/angryLlama.webp" alt="wizard looking in mirror">
+                <img src="resources/spellPages/angryLlama.webp" alt="angry two headed llama breathing fire">
             </div>
 
             <div class="page-right">
                 <form id="summon-form">
-                    <label for="familiar-name">Name your familiar:</label>
-                    <input type="text" id="familiar-name" name="familiarName" placeholder="E.g., Squshbob the Destroyer" required>
-
-                    <label for="creature-base">Choose your creature base:</label>
-                    <select id="creature-base" name="creatureBase" required>
-                        <option value="Dragon">Dragon</option>
-                        <option value="Llama">Llama</option>
-                        <option value="Sheep">Sheep</option>
-                        <option value="Phoenix">Phoenix</option>
-                        <option value="Unicorn">Unicorn</option>
-                        <option value="Bicycle">Bicycle</option>
-                    </select>
-
-                    <div>
-                        <label for="has-wings">Does your familiar have wings?</label>
-                        <input type="checkbox" id="has-wings" name="hasWings">
-                    </div>
-                    <div id="wings-selection" class="hidden">
-                        <label for="creature-wings">Choose your familiar's wings:</label>
-                        <select id="creature-wings" name="creatureWings">
-                            <option value="Dragon Wings">Dragon Wings</option>
-                            <option value="Fairy Wings">Fairy Wings</option>
-                            <option value="Bat Wings">Bat Wings</option>
-                            <option value="Feathered Wings">Feathered Wings</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <p>Extra customizations:</p>
-                        <input type="checkbox" id="fire-breath" name="custFireBreath" value="Fire Breath">
-                        <label for="fire-breath">Fire Breath</label>
-                        <input type="checkbox" id="extra-heads" name="custExtraHead" value="Extra Heads">
-                        <label for="extra-heads">Extra Heads</label>
-                        <input type="checkbox" id="levitating" name="custLevitating" value="Levitating">
-                        <label for="levitating">Levitating</label>
-                    </div>
-
-                    <label for="familiar-mood">What mood does your familiar have?</label>
-                    <input type="range" id="familiar-mood" name="familiarMood" min="1" max="10">
-                    <p id="mood-description">Apathetic</p>
-
-                    <label for="contract-end">When should the contract with your familiar end?</label>
-                    <input type="date" id="contract-end" name="contractEnd">
-
-                    <button type="submit">Summon Familiar</button>
+                    <!-- TODO: add form for summon familiar -->
                 </form>
             </div>
         </div>
